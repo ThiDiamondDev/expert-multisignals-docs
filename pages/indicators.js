@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { indicators } from "./indicatorsList";
+import { IndicatorsList } from "./indicatorsList";
 
 export default function Indicators() {
   return (
@@ -31,19 +31,7 @@ export default function Indicators() {
             The following terms can be used to get market data and make
             comparations:
           </h3>
-
-          {indicators.map(({ category, indicatorsList }, categoryIndex) => {
-            return (
-              <div key={categoryIndex + category}>
-                <h3 className={styles.category}>{category}</h3>
-                {indicatorsList.map((name, indicatorIndex) => (
-                  <div className={styles.indicator} key={name + indicatorIndex}>
-                    {name + "[n]"}
-                  </div>
-                ))}
-              </div>
-            );
-          })}
+          <IndicatorsList styles={styles} />
         </div>
       </main>
     </>

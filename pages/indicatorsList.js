@@ -102,7 +102,7 @@ const customIndicators = {
   ],
 };
 
-export const indicators = [
+const indicators = [
   trendIndicators,
   volumeIndicators,
   billWilliamsIndicators,
@@ -110,3 +110,20 @@ export const indicators = [
   timeseriesIndicators,
   customIndicators,
 ];
+
+export function IndicatorsList({ styles }) {
+  {
+    return indicators.map(({ category, indicatorsList }, categoryIndex) => {
+      return (
+        <div key={categoryIndex + category}>
+          <h3 className={styles.category}>{category}</h3>
+          {indicatorsList.map((name, indicatorIndex) => (
+            <div className={styles.indicator} key={name + indicatorIndex}>
+              {name + "[n]"}
+            </div>
+          ))}
+        </div>
+      );
+    });
+  }
+}
