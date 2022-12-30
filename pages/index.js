@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 
@@ -31,7 +30,7 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a
-            href=""
+            href="/indicators"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
