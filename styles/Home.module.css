@@ -221,6 +221,7 @@
   border: 1px solid rgba(var(--card-border-rgb), 0.15);
   width: 100%;
   height: fit-content;
+  padding: 3rem;
 }
 
 .container span {
