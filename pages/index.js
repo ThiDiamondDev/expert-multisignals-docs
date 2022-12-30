@@ -3,6 +3,21 @@ import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
+function CardLink({ children, title, href }) {
+  return (
+    <a
+      href={href}
+      className={styles.card}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <h2 className={inter.className}>
+        {title} <span>-&gt;</span>
+      </h2>
+      <p className={inter.className}>{children}</p>
+    </a>
+  );
+}
 
 export default function Home() {
   return (
@@ -29,65 +44,23 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <a
-            href="/indicators"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Indicators <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn more about supported indicators and how to automate trade
-              strategies.
-            </p>
-          </a>
+          <CardLink title="Indicators" href="/indicators">
+            Learn more about supported indicators and how to automate trade
+            strategies.
+          </CardLink>
 
-          <a
-            href=""
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Metatrader5 <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about the trading platform used to develop and run the
-              Expert Advisor.
-            </p>
-          </a>
+          <CardLink title="Metatrader5" href="https://www.metatrader5.com/">
+            Learn about the trading platform used to develop and run the Expert
+            Advisor.
+          </CardLink>
 
-          <a
-            href=""
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Author <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Meet the developer, check another cool projects or contact for
-              more info.
-            </p>
-          </a>
-
-          <a
-            href=""
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Another Features <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn in depths all the features and automate your own trade
-              system.
-            </p>
-          </a>
+          <CardLink title="Author" href="https://github.com/ThiDiamondDev/">
+            Meet the developer, check another cool projects or contact for more
+            info.
+          </CardLink>
+          <CardLink title="Another Features" href="/features">
+            Learn in depths all the features and automate your own trade system.
+          </CardLink>
         </div>
       </main>
     </>
