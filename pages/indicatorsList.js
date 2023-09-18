@@ -119,7 +119,7 @@ export function IndicatorsList({ styles }) {
           <h3 className={styles.category}>{category}</h3>
           {indicatorsList.map((name, indicatorIndex) => (
             <div className={styles.indicator} key={name + indicatorIndex}>
-              {name + "[n]"}
+              {name + "(n)"}
             </div>
           ))}
         </div>
