@@ -111,7 +111,7 @@ const indicators = [
   customIndicators,
 ];
 
-export function IndicatorsList({ styles }) {
+export default function IndicatorsList({ styles }) {
   {
     return indicators.map(({ category, indicatorsList }, categoryIndex) => {
       return (
