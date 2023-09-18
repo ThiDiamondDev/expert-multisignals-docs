@@ -33,7 +33,7 @@ export default function Indicators() {
             The following terms can be used to get market data and make
             comparations:
           </h3>
-          <IndicatorsList styles={styles} />
+          <IndicatorsList />
         </div>
       </main>
     </>

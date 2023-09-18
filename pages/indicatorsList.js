@@ -116,9 +116,9 @@ export default function IndicatorsList({ styles }) {
     return indicators.map(({ category, indicatorsList }, categoryIndex) => {
       return (
         <div key={categoryIndex + category}>
-          <h3 className={styles.category}>{category}</h3>
+          <h3 className={"category"}>{category}</h3>
           {indicatorsList.map((name, indicatorIndex) => (
-            <div className={styles.indicator} key={name + indicatorIndex}>
+            <div className={"indicator"} key={name + indicatorIndex}>
               {name + "(n)"}
             </div>
           ))}
