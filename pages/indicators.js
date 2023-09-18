@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { IndicatorsList } from "./indicatorsList";
+import IndicatorsList from "./indicatorsList";
 
 export default function Indicators() {
   return (
