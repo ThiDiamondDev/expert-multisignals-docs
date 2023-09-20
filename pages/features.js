@@ -25,8 +25,11 @@ export default function Features() {
           <h3>
             The EA is made with <a>MQL5</a> and runs inside Metatrader5
             platform. The project is still under development, but the main
-            feature is the generation of market Buy/Sell/Reversion signals based
-            on any indicator comparisions inside a text.
+            feature is the generation of market buy/sell/reversion signals based
+            on any indicator comparisions inside a text. There are also support
+            to pending orders, daily profit/loss limiting and custom trade
+            session to run the EA only in the especified time range and it also
+            works with custom symbols like Renko.
             <br />
             <br />
             With signals generation the Expert can open, close and manage
