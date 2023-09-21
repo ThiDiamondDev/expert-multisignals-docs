@@ -1,21 +1,18 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
+import DownloadButton from "../components/DownloadButton";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 function CardLink({ children, title, href }) {
   return (
-    <a
-      href={href}
-      className={styles.card}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <Link href={href} className={styles.card}>
       <h2 className={inter.className}>
         {title} <span>-&gt;</span>
       </h2>
       <p className={inter.className}>{children}</p>
-    </a>
+    </Link>
   );
 }
 
@@ -29,12 +26,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.description}>
-          <p style={{ backgroundColor: "white" }}>
-            Metatrader5 Expert Advisor
-            <br />
-          </p>
-        </div>
+        <DownloadButton />
 
         <div className={styles.center}>
           <h1>

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import IndicatorsList from "./indicatorsList";
+import DownloadButton from "../components/DownloadButton";
 
 export default function Indicators() {
   return (
@@ -12,13 +13,7 @@ export default function Indicators() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.description}>
-          <p style={{ backgroundColor: "white" }}>
-            Metatrader5 Expert Advisor
-            <br />
-          </p>
-        </div>
-
+        <DownloadButton />
         <div className={styles.center}>
           <h1>Supported Indicators List</h1>
         </div>
