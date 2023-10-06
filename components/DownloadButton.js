@@ -4,7 +4,7 @@ export default function DownloadButton() {
   return (
     <div className={styles.description}>
       <a
-        href="/ThiDiamondDev/expert-multisignals-docs/releases/download/demo-version/expert.ex5"
+        href="https://github.com/ThiDiamondDev/expert-multisignals-docs/releases/download/demo-version/"
         download={"expert.ex5"}
         className={styles.download}
       >
