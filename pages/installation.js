@@ -61,7 +61,7 @@ export default function Indicators() {
           </CardLink>
           <CardLink
             title="Detailed Instructions"
-            href="/https://www.metatrader5.com/en/terminal/help/algotrading/trade_robots_indicators"
+            href="https://www.metatrader5.com/en/terminal/help/algotrading/trade_robots_indicators"
           >
             Detailed instructions about how to install a expert advisor inside
             MetaTrader5.
