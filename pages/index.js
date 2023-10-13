@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import DownloadButton from "../components/DownloadButton";
-import { CardLink } from "../components/CardLink";
+import CardLink from "../components/CardLink";
 
 export default function Home() {
   return (

@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import IndicatorsList from "./indicatorsList";
 import DownloadButton from "../components/DownloadButton";
-import { CardLink } from "./CardLink";
+import CardLink from "../components/CardLink";
 import BackButton from "../components/BackButton";
 
 export default function Indicators() {
@@ -30,19 +30,21 @@ export default function Indicators() {
             >
               expert.ex5
             </a>{" "}
-            file and move to &quot;C:/Program Files/MetaTrader 5/MQL5/Experts/&quot;.
+            file and move to &quot;C:/Program Files/MetaTrader
+            5/MQL5/Experts/&quot;.
             <br />
             <br />
             To start an Expert Advisor, attach it to a chart. The easiest way is
             to double-click on an Expert Advisor in the Navigator window or
-            drag&apos;n&apos;drop it to a chart. This will bring up the Expert Advisor
-            Properties window.
+            drag&apos;n&apos;drop it to a chart. This will bring up the Expert
+            Advisor Properties window.
             <br />
-            <br /> Inside the &quot;Inputs&quot; tab, the parameters are located, and
-            after fill with the desired settings or load a previous saved &quot;.set&quot;
-            file, click OK to start the Expert Advisors on the chart. If an
-            Expert Advisor has been successfully started, its name and icon Auto
-            Trading enabled appear in the upper right corner of the chart.
+            <br /> Inside the &quot;Inputs&quot; tab, the parameters are
+            located, and after fill with the desired settings or load a previous
+            saved &quot;.set&quot; file, click OK to start the Expert Advisors
+            on the chart. If an Expert Advisor has been successfully started,
+            its name and icon Auto Trading enabled appear in the upper right
+            corner of the chart.
             <br />
             <br />
             If the icon is Auto Trading disabled, the Expert Advisor is not
