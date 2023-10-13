@@ -30,16 +30,16 @@ export default function Indicators() {
             >
               expert.ex5
             </a>{" "}
-            file and move to "C:/Program Files/MetaTrader 5/MQL5/Experts/".
+            file and move to &quot;C:/Program Files/MetaTrader 5/MQL5/Experts/&quot;.
             <br />
             <br />
             To start an Expert Advisor, attach it to a chart. The easiest way is
             to double-click on an Expert Advisor in the Navigator window or
-            drag'n'drop it to a chart. This will bring up the Expert Advisor
+            drag&apos;n&apos;drop it to a chart. This will bring up the Expert Advisor
             Properties window.
             <br />
-            <br /> Inside the "Inputs" tab, the parameters are located, and
-            after fill with the desired settings or load a previous saved ".set"
+            <br /> Inside the &quot;Inputs&quot; tab, the parameters are located, and
+            after fill with the desired settings or load a previous saved &quot;.set&quot;
             file, click OK to start the Expert Advisors on the chart. If an
             Expert Advisor has been successfully started, its name and icon Auto
             Trading enabled appear in the upper right corner of the chart.
