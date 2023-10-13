@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import DownloadButton from "../components/DownloadButton";
+import BackButton from "../components/BackButton";
 
 export default function Features() {
   return (
@@ -12,6 +13,7 @@ export default function Features() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <BackButton />
         <DownloadButton />
         <div className={styles.center}>
           <h1>Supported Features</h1>
