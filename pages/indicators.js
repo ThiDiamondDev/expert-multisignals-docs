@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import IndicatorsList from "./indicatorsList";
 import DownloadButton from "../components/DownloadButton";
+import BackButton from "../components/BackButton";
 
 export default function Indicators() {
   return (
@@ -13,6 +14,7 @@ export default function Indicators() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <BackButton />
         <DownloadButton />
         <div className={styles.center}>
           <h1>Supported Indicators List</h1>

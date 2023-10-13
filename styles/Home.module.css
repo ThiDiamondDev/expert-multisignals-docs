@@ -222,6 +222,7 @@
   width: 100%;
   height: fit-content;
   padding: 3rem;
+  margin-bottom: 20px;
 }
 
 .container span {
@@ -276,3 +277,19 @@
   align-items: center;
   display: flex;
  }
+
+ .download_link{
+  color: black;
+  background-color: white;
+  padding: 1%;
+  border-radius: 10px;
+  border-style: none;
+}
+.download_link:hover{
+  background-color: rgb(228, 228, 228);
+  cursor: pointer;
+  
+  }
+.backIcon{
+  transform: rotate(90deg);
+}
