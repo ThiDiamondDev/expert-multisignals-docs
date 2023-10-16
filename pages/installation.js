@@ -55,9 +55,9 @@ export default function Indicators() {
             Note: The current version only works on DEMO accounts.
           </h3>
         </div>
-        <div className={styles.grid}>
-          <CardLink title="Starter Sets" href="/Sets">
-            Get some pre-built sets to start testing.
+        <div className={styles.grid_2}>
+          <CardLink title="Starter Sets" href="/sets">
+            Get some pre-built configuration files (sets) to start testing.
           </CardLink>
           <CardLink
             title="Detailed Instructions"
