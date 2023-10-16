@@ -7,7 +7,10 @@ export default function CardLink({ children, title, href }) {
   return (
     <Link href={href} className={styles.card}>
       <h2 className={inter.className}>
-        {title} <span>-&gt;</span>
+        {title}{" "}
+        <div>
+          <span>-&gt;</span>
+        </div>
       </h2>
       <p className={inter.className}>{children}</p>
     </Link>
