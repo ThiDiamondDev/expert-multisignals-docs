@@ -10,6 +10,7 @@ export default function DownloadButton() {
       >
         <Image
           src={"/DownloadIcon.png"}
+          alt="Download Icon"
           style={{ marginRight: "5px" }}
           width={20}
           height={20}
