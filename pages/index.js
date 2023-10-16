@@ -31,7 +31,9 @@ export default function Home() {
           <CardLink title="Installation" href="/installation">
             Learn how to install and start testing the expert advisor.
           </CardLink>
-
+          <CardLink title="Starter Sets" href="/ets">
+            Get some pre-built configuration files (sets) to start testing.
+          </CardLink>
           <CardLink title="Author" href="https://github.com/ThiDiamondDev/">
             Meet the developer, check another cool projects or contact for more
             info.
