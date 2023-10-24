@@ -23,12 +23,49 @@ export default function Features() {
             The EA is made with <a>MQL5</a> and runs inside Metatrader5
             platform. The project is still under development, but the main
             feature is the generation of market buy/sell/reversion signals based
-            on any indicator comparisions inside a text. There are also support
-            to pending orders, daily profit/loss limiting and custom trade
-            session to run the EA only in the especified time range and it also
-            works with custom symbols like Renko.
+            on any indicator comparisions inside expressions. There are still
+            work in progress and some features/parameters can change along time.
+            Also trading on REAL accounts is currently blocked, so it will only
+            work on DEMO accounts for security reasons. Feel free to download,
+            test and share your feedback.
             <br />
             <br />
+            The current features of the robot are:
+            <br />
+            <br />
+            <ul className={styles.list}>
+              <li>Work mode on every tick or on bar.</li>
+              <li>Work symbol setting to trade custom charts like Renko</li>
+              <li>Allow/deny buy or sell trades, as well as reversions.</li>
+              <li>Partial entries/exits on profit and on loss.</li>
+              <li>
+                Limiting positions, orders and volumes opened, interval in
+                seconds between trades and max trade per day.
+              </li>
+              <li>
+                Definition of lots for open trades and option to use market
+                price or pending orders.
+              </li>
+              <li>
+                Definition of signals for open, close and reverse positions.
+              </li>
+              <li>
+                Definition of fixed stop loss and take profit in points or
+                custom expression calculation.
+              </li>
+              <li>
+                Option to use a trailing stop based on fixed points or
+                expression calculation.
+              </li>
+              <li>
+                Settings for start and end hour/minute of trade session, with
+                option to close positions after end.
+              </li>
+              <li>
+                Monetary limits for profit and loss, with option to close
+                positions after reach the limit.
+              </li>
+            </ul>
             With signals generation the Expert can open, close and manage
             positions with fixed stop loss and take profit.
             <br />
