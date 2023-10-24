@@ -142,6 +142,15 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+
+.main{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main .container{
+  padding-left: 20px;
+  padding-right: 20px;
+}
   .content {
     padding: 4rem;
   }
