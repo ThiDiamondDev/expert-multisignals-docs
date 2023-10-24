@@ -38,7 +38,7 @@ export default function Home() {
             Meet the developer, check another cool projects or contact for more
             info.
           </CardLink>
-          <CardLink title="Another Features" href="/features">
+          <CardLink title="Features" href="/features">
             Learn in depths all the features and automate your own trade system.
           </CardLink>
         </div>
