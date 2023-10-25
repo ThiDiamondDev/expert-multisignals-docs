@@ -1,9 +1,9 @@
-import styles from "../styles/Home.module.css";
-import DownloadButton from "../components/DownloadButton";
-import BackButton from "../components/BackButton";
-import Header from "../components/Header";
 import { useRouter } from "next/router";
+import BackButton from "../components/BackButton";
+import DownloadButton from "../components/DownloadButton";
+import Header from "../components/Header";
 import InstallationContent from "../content/installation";
+import styles from "../styles/Home.module.css";
 
 export default function Installation() {
   const { locale } = useRouter();

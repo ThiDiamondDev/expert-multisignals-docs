@@ -1,10 +1,10 @@
-import styles from "../styles/Home.module.css";
-import DownloadButton from "../components/DownloadButton";
-import CardLink from "../components/CardLink";
-import BackButton from "../components/BackButton";
-import Header from "../components/Header";
 import { useRouter } from "next/router";
+import BackButton from "../components/BackButton";
+import CardLink from "../components/CardLink";
+import DownloadButton from "../components/DownloadButton";
+import Header from "../components/Header";
 import SetsContent from "../content/sets";
+import styles from "../styles/Home.module.css";
 
 export default function Sets() {
   const { locale } = useRouter();
