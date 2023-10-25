@@ -1,43 +1,58 @@
-import styles from "../styles/Home.module.css";
-import DownloadButton from "../components/DownloadButton";
+import { useRouter } from "next/router";
 import CardLink from "../components/CardLink";
+import DownloadButton from "../components/DownloadButton";
 import Header from "../components/Header";
+import HomeContent from "../content/index";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  const { locale } = useRouter();
+  const {
+    headerTitle,
+    headerDescription,
+    title,
+    cardIndicatorsTitle,
+    cardIndicatorsDescription,
+    cardInstallationTitle,
+    cardInstallationDescription,
+    cardSetsTitle,
+    cardSetsDescription,
+    cardAuthorTitle,
+    cardAuthorDescription,
+    cardFeaturesTitle,
+    cardFeaturesDescription,
+  } = HomeContent[locale];
+
   return (
     <>
-      <Header
-        title={"ExpertMultiSignals Docs"}
-        description={"Documentation of Expert Advisor"}
-      />
+      <Header title={headerTitle} description={headerDescription} />
       <main className={styles.main}>
         <DownloadButton />
 
-        <div className={styles.center}>
-          <h1>
-            MultiSignals
-            <br /> Expert Advisor
-          </h1>
-        </div>
+        <div className={styles.center}>{title}</div>
 
         <div className={styles.grid}>
-          <CardLink title="Indicators" href="/indicators">
-            Learn more about supported indicators and how to automate trade
-            strategies.
+          <CardLink title={cardIndicatorsTitle} href={`${locale}/indicators`}>
+            {cardIndicatorsDescription}
           </CardLink>
 
-          <CardLink title="Installation" href="/installation">
-            Learn how to install and start testing the expert advisor.
+          <CardLink
+            title={cardInstallationTitle}
+            href={`${locale}/installation`}
+          >
+            {cardInstallationDescription}
           </CardLink>
-          <CardLink title="Starter Sets" href="/sets">
-            Get some pre-built configuration files (sets) to start testing.
+          <CardLink title={cardSetsTitle} href={`${locale}/sets`}>
+            {cardSetsDescription}
           </CardLink>
-          <CardLink title="Author" href="https://github.com/ThiDiamondDev/">
-            Meet the developer, check another cool projects or contact for more
-            info.
+          <CardLink
+            title={cardAuthorTitle}
+            href="https://www.linkedin.com/in/thidiamond/"
+          >
+            {cardAuthorDescription}
           </CardLink>
-          <CardLink title="Features" href="/features">
-            Learn in depths all the features and automate your own trade system.
+          <CardLink title={cardFeaturesTitle} href={`${locale}/features`}>
+            {cardFeaturesDescription}
           </CardLink>
         </div>
       </main>

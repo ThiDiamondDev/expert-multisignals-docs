@@ -1,6 +1,13 @@
-import styles from "../styles/Home.module.css";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import styles from "../styles/Home.module.css";
+
 export default function DownloadButton() {
+  const { locale } = useRouter();
+  const buttonText = {
+    "en-US": "Download for Metatrader5",
+    "pt-BR": "Baixar para o Metatrader5",
+  };
   return (
     <div className={styles.description}>
       <a
@@ -15,7 +22,7 @@ export default function DownloadButton() {
           width={20}
           height={20}
         />
-        Download for Metatrader5
+        {buttonText[locale]}
         <br />
       </a>
     </div>
