@@ -1,19 +1,13 @@
-import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import IndicatorsList from "./indicatorsList";
 import DownloadButton from "../components/DownloadButton";
 import CardLink from "../components/CardLink";
 import BackButton from "../components/BackButton";
+import Header from "../components/Header";
 
-export default function Indicators() {
+export default function Sets() {
   return (
     <>
-      <Head>
-        <title>Sets</title>
-        <meta name="description" content="Sets" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Header title={"Sets"} description={"Sets"} />
       <main className={styles.main}>
         <BackButton />
         <DownloadButton />

@@ -10,19 +10,16 @@ export default function CardLink({ children, title, href, download }) {
   const alignSelf = download ? "end" : "auto";
   const marginLeft = download ? "10px" : "0";
   return (
-    <Link
-      href={href}
-      download={fileName}
-      className={styles.card}
-      style={{ width }}
-    >
-      <h2 className={inter.className}>
-        {title}{" "}
-        <div style={{ transform, alignSelf, marginLeft }}>
-          <span>-&gt;</span>
-        </div>
-      </h2>
-      <p className={inter.className}>{children}</p>
-    </Link>
+    <div className={styles.card}>
+      <Link href={href} download={fileName} style={{ width }}>
+        <h2 className={inter.className}>
+          {title}
+          <div style={{ transform, alignSelf, marginLeft }}>
+            <span>-&gt;</span>
+          </div>
+        </h2>
+        <p className={inter.className}>{children}</p>
+      </Link>
+    </div>
   );
 }
