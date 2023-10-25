@@ -47,7 +47,7 @@ export default function Home() {
           </CardLink>
           <CardLink
             title={cardAuthorTitle}
-            href="https://github.com/ThiDiamondDev/"
+            href="https://www.linkedin.com/in/thidiamond/"
           >
             {cardAuthorDescription}
           </CardLink>
