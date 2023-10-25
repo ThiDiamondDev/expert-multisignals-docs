@@ -10,6 +10,7 @@ export default function BackButton() {
         style={{ borderRadius: 360, margin: "10px", marginLeft: 0 }}
       >
         <Image
+          alt="Download Icon"
           className={styles.backIcon}
           src={"/DownloadIcon.png"}
           width={20}

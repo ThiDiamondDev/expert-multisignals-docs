@@ -1,17 +1,12 @@
-import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import DownloadButton from "../components/DownloadButton";
 import BackButton from "../components/BackButton";
+import Header from "../components/Header";
 
 export default function Features() {
   return (
     <>
-      <Head>
-        <title>EA Features</title>
-        <meta name="description" content="Features" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Header title={"EA Features"} description={"Features"} />
       <main className={styles.main}>
         <BackButton />
         <DownloadButton />
