@@ -3,7 +3,7 @@ const IndicatorsContentEnglish = {
   headerDescription: "Indicators",
   title: "Supported Indicators List",
   pageContent: (
-    <h3>
+    <p>
       The EA supports the same indicators of MT5, even custom or external
       indicators by just mapping the buffers exposed. The n refers to the bar
       number, where 0 is the current opened candle, 1 means the last closed
@@ -11,7 +11,7 @@ const IndicatorsContentEnglish = {
       <br />
       <br />
       The following terms can be used to get market data and make comparations:
-    </h3>
+    </p>
   ),
 };
 
@@ -20,7 +20,7 @@ const IndicatorsContentPortuguese = {
   headerDescription: "Indicadores",
   title: "Indicadores Suportados",
   pageContent: (
-    <h3>
+    <p>
       O robô trader suporta os mesmos indicadores do Metatrader5, mesmo
       customizados ou externos. Ao chamar o indicador, o parâmetro n refere-se
       ao numero da barra, sendo 0 a vela aberta atualmente, 1 significa a última
@@ -30,7 +30,7 @@ const IndicatorsContentPortuguese = {
       <br />
       Os seguintes termos podem ser usados para obter dados de mercado e fazer
       comparações:
-    </h3>
+    </p>
   ),
 };
 

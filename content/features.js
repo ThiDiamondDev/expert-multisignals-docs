@@ -5,7 +5,7 @@ const FeaturesContentEnglish = {
   headerDescription: "Features",
   title: "Supported Features",
   pageContent: (styles) => (
-    <h3>
+    <p>
       The EA is made with
       <Link href={"https://www.mql5.com/en/docs"}>MQL5</Link> and runs inside
       Metatrader5 platform. The project is still under development, but the main
@@ -58,7 +58,7 @@ const FeaturesContentEnglish = {
       Another cool feature is the possibility to test the settings in market
       history, live on demo accounts and even optimize the used parameters
       inside the MT5 strategy tester.
-    </h3>
+    </p>
   ),
 };
 
@@ -67,7 +67,7 @@ const FeaturesContentPortuguese = {
   headerDescription: "Recursos do Robô",
   title: "Recursos do Robô",
   pageContent: (styles) => (
-    <h3>
+    <p>
       O Robô foi criado utilizando a linguagem
       <Link href={"https://www.mql5.com/pt/docs"}>MQL5</Link> e roda dentro
       Plataforma Metatrader5. O projeto ainda está em desenvolvimento, mas o
@@ -126,7 +126,7 @@ const FeaturesContentPortuguese = {
       Outro recurso interessante é a possibilidade de testar as configurações no
       histórico do ativo, no mercado ao vivo em contas DEMO e até otimizar os
       parâmetros usados dentro do testador de estratégia MT5.
-    </h3>
+    </p>
   ),
 };
 

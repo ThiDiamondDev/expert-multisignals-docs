@@ -3,7 +3,7 @@ const SetsContentEnglish = {
   headerDescription: "Sets",
   title: "Set Files as Start Point",
   pageContent: (
-    <h3>
+    <p>
       Sets are pre-built configuration files that can be loaded by MetaTrader5
       to be used by Expert Advisors.
       <br />
@@ -13,7 +13,7 @@ const SetsContentEnglish = {
       accounts. We recommend that you use this files as an initial basis for
       study, analysis and testing, and that you carry out the adjustments that
       you find suitable for your profile.
-    </h3>
+    </p>
   ),
   setLinkTitles: {
     MACross: "2 Moving Averages Crossing",
@@ -28,7 +28,7 @@ const SetsContentPortuguese = {
   headerDescription: "Arquivos Sets",
   title: "Começando com Arquivos de Configurações",
   pageContent: (
-    <h3>
+    <p>
       Sets são arquivos de configuração salvos que podem ser carregados pelo
       MetaTrader5 para ser usado por um robô trader.
       <br />
@@ -38,7 +38,7 @@ const SetsContentPortuguese = {
       reais nem recomendações de investimento. Recomendamos que você use esses
       arquivos APENAS como base inicial para estudo, análise e teste, e que você
       realize os ajustes que você achar adequado ao seu perfil.
-    </h3>
+    </p>
   ),
   setLinkTitles: {
     MACross: "Cruzamento 2 Médias Moveis",

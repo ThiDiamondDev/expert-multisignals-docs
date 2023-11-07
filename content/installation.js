@@ -5,7 +5,7 @@ const InstallationContentEnglish = {
   headerDescription: "Installation",
   title: "Installation Guide",
   pageContent: (styles) => (
-    <h3>
+    <p>
       To start automating your strategies, download the{" "}
       <a
         href="https://github.com/ThiDiamondDev/expert-multisignals-docs/releases/download/demo-version/expert.ex5"
@@ -34,7 +34,7 @@ const InstallationContentEnglish = {
       settings, as well as in the trading platform options. <br />
       <br />
       Note: The current version only works on DEMO accounts.
-    </h3>
+    </p>
   ),
   pageLinks: (styles) => (
     <div className={styles.grid_2}>
@@ -64,7 +64,7 @@ const InstallationContentPortuguese = {
   headerDescription: "Instalação",
   title: "Guia de Instalação",
   pageContent: (styles) => (
-    <h3>
+    <p>
       Para começar a automatizar suas estratégias, baixe o arquivo{" "}
       <a
         href="https://github.com/ThiDiamondDev/expert-multisignals-docs/releases/download/demo-version/expert.ex5"
@@ -96,7 +96,7 @@ const InstallationContentPortuguese = {
       <br />
       <br />
       Nota: A versão atual só funciona em contas DEMO.
-    </h3>
+    </p>
   ),
   pageLinks: (styles) => (
     <div className={styles.grid_2}>

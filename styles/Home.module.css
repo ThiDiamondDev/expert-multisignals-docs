@@ -262,6 +262,10 @@
   text-align: left;
 }
 
+.container p {
+  color: white;
+  text-align: left;
+}
 .container h5 {
   color: white;
   text-align: left;
